@@ -1,0 +1,334 @@
+{
+  "statistics": {
+    "raw_rows": 2225,
+    "indexed_documents": 2126,
+    "duplicates_removed": 99,
+    "categories": {
+      "tech": 347,
+      "business": 503,
+      "sport": 504,
+      "entertainment": 369,
+      "politics": 403
+    },
+    "vocabulary": 27585,
+    "raw_vocabulary": 27880,
+    "average_tokens": 198.83066792097836,
+    "tfidf_shape": [
+      2126,
+      27585
+    ],
+    "tfidf_nonzeros": 296232,
+    "build_seconds": 0.5713884629999484,
+    "sha256": "fdaee0f7451cd8db2709d00e992886fe1c387ee332b8c7b7c1554ed3d3e3382e",
+    "python": "3.12.14",
+    "sklearn": "1.8.0"
+  },
+  "preprocessing_example": [
+    "mobile",
+    "phones",
+    "changing",
+    "technology"
+  ],
+  "boolean": {
+    "mobile": {
+      "count": 107,
+      "first_ids": [
+        1,
+        25,
+        28,
+        134,
+        146,
+        150,
+        160,
+        195,
+        229,
+        263
+      ]
+    },
+    "mobile AND phone": {
+      "count": 74,
+      "first_ids": [
+        25,
+        28,
+        134,
+        150,
+        160,
+        195,
+        229,
+        265,
+        311,
+        332
+      ]
+    },
+    "mobile OR phone": {
+      "count": 153,
+      "first_ids": [
+        1,
+        2,
+        25,
+        28,
+        29,
+        48,
+        66,
+        129,
+        134,
+        146
+      ]
+    },
+    "mobile AND NOT phone": {
+      "count": 33,
+      "first_ids": [
+        1,
+        146,
+        263,
+        350,
+        395,
+        402,
+        501,
+        513,
+        593,
+        636
+      ]
+    }
+  },
+  "examples": {
+    "tfidf": [
+      {
+        "id": 28,
+        "category": "tech",
+        "score": 0.24693828967782216,
+        "preview": "mobile gig aims to rock 3g forget about going to a crowded bar to enjoy a gig by the lates"
+      },
+      {
+        "id": 1755,
+        "category": "tech",
+        "score": 0.24684887622433666,
+        "preview": "home phones face unclear future the fixed line phone in your home could soon be an endange"
+      },
+      {
+        "id": 890,
+        "category": "tech",
+        "score": 0.2443889495870643,
+        "preview": "mobiles rack up 20 years of use mobile phones in the uk are celebrating their 20th anniver"
+      },
+      {
+        "id": 2009,
+        "category": "tech",
+        "score": 0.21857304657473325,
+        "preview": "half of uk s mobiles  go online  multimedia mobile phones are finally showing signs of tak"
+      },
+      {
+        "id": 2030,
+        "category": "tech",
+        "score": 0.21273761194288465,
+        "preview": "friends fear  with lost mobiles people are becoming so dependent on their mobile phones th"
+      }
+    ],
+    "bm25": [
+      {
+        "id": 25,
+        "category": "tech",
+        "score": 15.828414262133274,
+        "preview": "mobile audio enters new dimension as mobile phones move closer to being a ubiquitous  all-"
+      },
+      {
+        "id": 890,
+        "category": "tech",
+        "score": 15.70349722454631,
+        "preview": "mobiles rack up 20 years of use mobile phones in the uk are celebrating their 20th anniver"
+      },
+      {
+        "id": 1976,
+        "category": "tech",
+        "score": 14.461109358584345,
+        "preview": "lifestyle  governs mobile choice  faster  better or funkier hardware alone is not going to"
+      },
+      {
+        "id": 2175,
+        "category": "tech",
+        "score": 14.461109358584345,
+        "preview": "lifestyle  governs mobile choice  faster  better or funkier hardware alone is not going to"
+      },
+      {
+        "id": 28,
+        "category": "tech",
+        "score": 14.457800421158272,
+        "preview": "mobile gig aims to rock 3g forget about going to a crowded bar to enjoy a gig by the lates"
+      }
+    ]
+  },
+  "evaluation": [
+    {
+      "model": "tfidf",
+      "query": "stock market shares",
+      "category": "business",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "economic growth inflation",
+      "category": "business",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "football league team",
+      "category": "sport",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "tennis tournament champion",
+      "category": "sport",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "election government parliament",
+      "category": "politics",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "minister political party",
+      "category": "politics",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "mobile phone technology",
+      "category": "tech",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "computer software internet",
+      "category": "tech",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "film cinema awards",
+      "category": "entertainment",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "tfidf",
+      "query": "music album singer",
+      "category": "entertainment",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "stock market shares",
+      "category": "business",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "economic growth inflation",
+      "category": "business",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "football league team",
+      "category": "sport",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "tennis tournament champion",
+      "category": "sport",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "election government parliament",
+      "category": "politics",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "minister political party",
+      "category": "politics",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "mobile phone technology",
+      "category": "tech",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "computer software internet",
+      "category": "tech",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "film cinema awards",
+      "category": "entertainment",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "model": "bm25",
+      "query": "music album singer",
+      "category": "entertainment",
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    }
+  ],
+  "summary": {
+    "tfidf": {
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    },
+    "bm25": {
+      "p_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "rr": 1.0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+test_bm25_formula (test_search.RetrievalTests.test_bm25_formula) ... ok
+test_boolean_logic (test_search.RetrievalTests.test_boolean_logic) ... ok
+test_invalid_query (test_search.RetrievalTests.test_invalid_query) ... ok
+test_preprocessing (test_search.RetrievalTests.test_preprocessing) ... ok
+test_ranked_and_unknown (test_search.RetrievalTests.test_ranked_and_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK
